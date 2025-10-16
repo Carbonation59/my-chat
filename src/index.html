@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Send a message</title>
+</head>
+<body>
+
+    <div class="chat-container">
+
+	<div class="chat-header">
+  	    <button class="chat-back-btn" aria-label="Назад"> 🢀 </button>
+  	    <button class="chat-avatar" aria-label="Аватарка"> 👤</button>
+
+  	    <div class="header-info">
+    		<div class="header-name">Дмитрий</div>
+    		<div class="header-status">был в сети 2 часа назад</div>
+  	    </div>
+
+	    <div class="header-actions">
+	        <button class="chat-menu-btn" aria-label="Меню"> ⋮ </button>
+  	        <button class="chat-search-btn" aria-label="Поиск"> 🔍</button>
+	    </div>
+
+	</div>
+
+
+        <form class="form">
+            <div class="chat"></div>
+	    <div class="input-wrapper">
+            	<input class="form-input" name="message-text" placeholder="Введите сообщение" type="text">
+	    	<button class="chat-attach-btn" aria-label="Прикрепить файл"> 📎</button>
+	    </div>
+        </form>
+
+        <button id="switch-person">Сменить сторону собеседника</button>
+        <button id="clear-chat">Очистить чат</button>
+    </div>
+
+    <script src="bundle.js"></script>
+</body>
+</html>
