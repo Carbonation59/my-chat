@@ -1,6 +1,8 @@
 name: GitHub Pages
 run-name: ${{ github.actor }} is rolling out a new version of the app 🚀
 on: [push]
+permissions:
+  contents: write
 jobs:
   Build-and-Deploy:
     runs-on: ubuntu-latest
